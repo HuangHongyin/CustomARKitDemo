@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ga-LY-yTX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YuV-wC-EcG">
+                                <rect key="frame" x="0.0" y="190" width="375" height="287"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wV0-9r-QUF">
+                                        <rect key="frame" x="162" y="30" width="51" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="4gq-Hy-fTX"/>
+                                            <constraint firstAttribute="width" constant="51" id="6eC-UT-AeT"/>
+                                        </constraints>
+                                        <state key="normal" title="开启AR"/>
+                                        <connections>
+                                            <action selector="openAR:" destination="BV1-FR-VrT" eventType="touchUpInside" id="p1O-ow-J6L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKj-Ou-kIi">
+                                        <rect key="frame" x="156" y="76" width="62" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="DEf-a0-onD"/>
+                                            <constraint firstAttribute="width" constant="62" id="KiP-qg-rcg"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="62" id="Q2Z-oU-N8c"/>
+                                        </constraints>
+                                        <state key="normal" title="捕捉平地"/>
+                                        <connections>
+                                            <action selector="ARPlane:" destination="BV1-FR-VrT" eventType="touchUpInside" id="vLR-Sy-P5v"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doF-Vc-62Y">
+                                        <rect key="frame" x="111" y="122" width="153" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="153" id="fBV-aZ-ReB"/>
+                                            <constraint firstAttribute="height" constant="30" id="fEY-WB-LEb"/>
+                                        </constraints>
+                                        <state key="normal" title="虚拟物体跟随相机移动"/>
+                                        <connections>
+                                            <action selector="ARMove:" destination="BV1-FR-VrT" eventType="touchUpInside" id="JaP-pQ-Ng0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIO-Mc-luK">
+                                        <rect key="frame" x="111" y="168" width="153" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="153" id="ZYC-Jx-rc7"/>
+                                            <constraint firstAttribute="height" constant="30" id="qu3-XU-RbR"/>
+                                        </constraints>
+                                        <state key="normal" title="虚拟物体围绕相机旋转"/>
+                                        <connections>
+                                            <action selector="ARRotation:" destination="BV1-FR-VrT" eventType="touchUpInside" id="dqX-ke-L9X"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xKj-Ou-kIi" firstAttribute="top" secondItem="wV0-9r-QUF" secondAttribute="bottom" constant="16" id="2u8-cQ-jm2"/>
+                                    <constraint firstItem="xKj-Ou-kIi" firstAttribute="leading" secondItem="YuV-wC-EcG" secondAttribute="leading" constant="156" id="Eig-wC-Y6Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="doF-Vc-62Y" secondAttribute="trailing" constant="111" id="JKj-po-Sj2"/>
+                                    <constraint firstAttribute="width" secondItem="YuV-wC-EcG" secondAttribute="height" multiplier="375:287" id="KNl-Ul-h1g"/>
+                                    <constraint firstItem="yIO-Mc-luK" firstAttribute="top" secondItem="doF-Vc-62Y" secondAttribute="bottom" constant="16" id="LIX-1h-USz"/>
+                                    <constraint firstItem="wV0-9r-QUF" firstAttribute="leading" secondItem="YuV-wC-EcG" secondAttribute="leading" constant="162" id="TGH-yF-Rho"/>
+                                    <constraint firstItem="doF-Vc-62Y" firstAttribute="top" secondItem="xKj-Ou-kIi" secondAttribute="bottom" constant="16" id="TOH-sG-jdY"/>
+                                    <constraint firstItem="yIO-Mc-luK" firstAttribute="centerX" secondItem="doF-Vc-62Y" secondAttribute="centerX" id="acz-h6-SQn"/>
+                                    <constraint firstAttribute="trailing" secondItem="yIO-Mc-luK" secondAttribute="trailing" constant="111" id="fhr-rc-3L7"/>
+                                    <constraint firstItem="yIO-Mc-luK" firstAttribute="leading" secondItem="YuV-wC-EcG" secondAttribute="leading" constant="111" id="iEB-ON-UR4"/>
+                                    <constraint firstItem="doF-Vc-62Y" firstAttribute="leading" secondItem="YuV-wC-EcG" secondAttribute="leading" constant="111" id="lXV-c7-GNf"/>
+                                    <constraint firstItem="xKj-Ou-kIi" firstAttribute="centerX" secondItem="wV0-9r-QUF" secondAttribute="centerX" id="n0e-eg-eeS"/>
+                                    <constraint firstAttribute="trailing" secondItem="wV0-9r-QUF" secondAttribute="trailing" constant="162" id="pbc-0u-0oQ"/>
+                                    <constraint firstItem="doF-Vc-62Y" firstAttribute="centerX" secondItem="xKj-Ou-kIi" secondAttribute="centerX" id="qH9-DU-L5j"/>
+                                    <constraint firstAttribute="trailing" secondItem="xKj-Ou-kIi" secondAttribute="trailing" constant="157" id="uMX-rU-BvC"/>
+                                    <constraint firstItem="wV0-9r-QUF" firstAttribute="top" secondItem="YuV-wC-EcG" secondAttribute="top" constant="30" id="urm-1G-WbC"/>
+                                    <constraint firstItem="wV0-9r-QUF" firstAttribute="centerX" secondItem="YuV-wC-EcG" secondAttribute="centerX" id="yQC-u5-su3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Os-x6-gRN" firstAttribute="trailing" secondItem="YuV-wC-EcG" secondAttribute="trailing" id="Krx-cp-ocv"/>
+                            <constraint firstItem="YuV-wC-EcG" firstAttribute="centerY" secondItem="5ga-LY-yTX" secondAttribute="centerY" id="Mgg-aR-1UT"/>
+                            <constraint firstItem="YuV-wC-EcG" firstAttribute="leading" secondItem="1Os-x6-gRN" secondAttribute="leading" id="aVE-0y-L4Q"/>
+                            <constraint firstItem="YuV-wC-EcG" firstAttribute="centerX" secondItem="5ga-LY-yTX" secondAttribute="centerX" id="dvC-bt-kT5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Os-x6-gRN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+</document>

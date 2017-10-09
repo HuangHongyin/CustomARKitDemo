@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		255BA9D21F7F442900158856 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 255BA9D11F7F442900158856 /* AppDelegate.m */; };
+		255BA9D41F7F442900158856 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 255BA9D31F7F442900158856 /* art.scnassets */; };
+		255BA9D71F7F442900158856 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 255BA9D61F7F442900158856 /* ViewController.m */; };
+		255BA9DA1F7F442900158856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255BA9D81F7F442900158856 /* Main.storyboard */; };
+		255BA9DC1F7F442900158856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255BA9DB1F7F442900158856 /* Assets.xcassets */; };
+		255BA9DF1F7F442900158856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255BA9DD1F7F442900158856 /* LaunchScreen.storyboard */; };
+		255BA9E21F7F442900158856 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 255BA9E11F7F442900158856 /* main.m */; };
+		255BA9EC1F7F442900158856 /* ___AR__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 255BA9EB1F7F442900158856 /* ___AR__Tests.m */; };
+		255BA9F71F7F442900158856 /* ___AR__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 255BA9F61F7F442900158856 /* ___AR__UITests.m */; };
+		255BAA061F7F4C6500158856 /* ARSCNViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 255BAA051F7F4C6500158856 /* ARSCNViewViewController.m */; };
+		255BAA091F807B6700158856 /* ARSCNViewPlaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 255BAA081F807B6700158856 /* ARSCNViewPlaneController.m */; };
+		255BAA0C1F80BFE700158856 /* ARSCNViewMoveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 255BAA0B1F80BFE700158856 /* ARSCNViewMoveController.m */; };
+		255BAA0F1F80C69600158856 /* ARSCNViewRotateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 255BAA0E1F80C69600158856 /* ARSCNViewRotateController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		255BA9E81F7F442900158856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 255BA9C51F7F442900158856 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 255BA9CC1F7F442900158856;
+			remoteInfo = "自定义AR实现";
+		};
+		255BA9F31F7F442900158856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 255BA9C51F7F442900158856 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 255BA9CC1F7F442900158856;
+			remoteInfo = "自定义AR实现";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		255BA9CD1F7F442900158856 /* 自定义AR实现.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自定义AR实现.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		255BA9D01F7F442900158856 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		255BA9D11F7F442900158856 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		255BA9D31F7F442900158856 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		255BA9D51F7F442900158856 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		255BA9D61F7F442900158856 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		255BA9D91F7F442900158856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		255BA9DB1F7F442900158856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		255BA9DE1F7F442900158856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		255BA9E01F7F442900158856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		255BA9E11F7F442900158856 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		255BA9E71F7F442900158856 /* 自定义AR实现Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义AR实现Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		255BA9EB1F7F442900158856 /* ___AR__Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___AR__Tests.m"; sourceTree = "<group>"; };
+		255BA9ED1F7F442900158856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		255BA9F21F7F442900158856 /* 自定义AR实现UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义AR实现UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		255BA9F61F7F442900158856 /* ___AR__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___AR__UITests.m"; sourceTree = "<group>"; };
+		255BA9F81F7F442900158856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		255BAA041F7F4C6500158856 /* ARSCNViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSCNViewViewController.h; sourceTree = "<group>"; };
+		255BAA051F7F4C6500158856 /* ARSCNViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSCNViewViewController.m; sourceTree = "<group>"; };
+		255BAA071F807B6700158856 /* ARSCNViewPlaneController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSCNViewPlaneController.h; sourceTree = "<group>"; };
+		255BAA081F807B6700158856 /* ARSCNViewPlaneController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSCNViewPlaneController.m; sourceTree = "<group>"; };
+		255BAA0A1F80BFE700158856 /* ARSCNViewMoveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSCNViewMoveController.h; sourceTree = "<group>"; };
+		255BAA0B1F80BFE700158856 /* ARSCNViewMoveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSCNViewMoveController.m; sourceTree = "<group>"; };
+		255BAA0D1F80C69600158856 /* ARSCNViewRotateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSCNViewRotateController.h; sourceTree = "<group>"; };
+		255BAA0E1F80C69600158856 /* ARSCNViewRotateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSCNViewRotateController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		255BA9CA1F7F442900158856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255BA9E41F7F442900158856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255BA9EF1F7F442900158856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		255BA9C41F7F442900158856 = {
+			isa = PBXGroup;
+			children = (
+				255BA9CF1F7F442900158856 /* 自定义AR实现 */,
+				255BA9EA1F7F442900158856 /* 自定义AR实现Tests */,
+				255BA9F51F7F442900158856 /* 自定义AR实现UITests */,
+				255BA9CE1F7F442900158856 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		255BA9CE1F7F442900158856 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				255BA9CD1F7F442900158856 /* 自定义AR实现.app */,
+				255BA9E71F7F442900158856 /* 自定义AR实现Tests.xctest */,
+				255BA9F21F7F442900158856 /* 自定义AR实现UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		255BA9CF1F7F442900158856 /* 自定义AR实现 */ = {
+			isa = PBXGroup;
+			children = (
+				255BA9D01F7F442900158856 /* AppDelegate.h */,
+				255BA9D11F7F442900158856 /* AppDelegate.m */,
+				255BA9D31F7F442900158856 /* art.scnassets */,
+				255BA9D51F7F442900158856 /* ViewController.h */,
+				255BA9D61F7F442900158856 /* ViewController.m */,
+				255BAA041F7F4C6500158856 /* ARSCNViewViewController.h */,
+				255BAA051F7F4C6500158856 /* ARSCNViewViewController.m */,
+				255BAA071F807B6700158856 /* ARSCNViewPlaneController.h */,
+				255BAA081F807B6700158856 /* ARSCNViewPlaneController.m */,
+				255BAA0A1F80BFE700158856 /* ARSCNViewMoveController.h */,
+				255BAA0B1F80BFE700158856 /* ARSCNViewMoveController.m */,
+				255BAA0D1F80C69600158856 /* ARSCNViewRotateController.h */,
+				255BAA0E1F80C69600158856 /* ARSCNViewRotateController.m */,
+				255BA9D81F7F442900158856 /* Main.storyboard */,
+				255BA9DB1F7F442900158856 /* Assets.xcassets */,
+				255BA9DD1F7F442900158856 /* LaunchScreen.storyboard */,
+				255BA9E01F7F442900158856 /* Info.plist */,
+				255BA9E11F7F442900158856 /* main.m */,
+			);
+			path = "自定义AR实现";
+			sourceTree = "<group>";
+		};
+		255BA9EA1F7F442900158856 /* 自定义AR实现Tests */ = {
+			isa = PBXGroup;
+			children = (
+				255BA9EB1F7F442900158856 /* ___AR__Tests.m */,
+				255BA9ED1F7F442900158856 /* Info.plist */,
+			);
+			path = "自定义AR实现Tests";
+			sourceTree = "<group>";
+		};
+		255BA9F51F7F442900158856 /* 自定义AR实现UITests */ = {
+			isa = PBXGroup;
+			children = (
+				255BA9F61F7F442900158856 /* ___AR__UITests.m */,
+				255BA9F81F7F442900158856 /* Info.plist */,
+			);
+			path = "自定义AR实现UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		255BA9CC1F7F442900158856 /* 自定义AR实现 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 255BA9FB1F7F442900158856 /* Build configuration list for PBXNativeTarget "自定义AR实现" */;
+			buildPhases = (
+				255BA9C91F7F442900158856 /* Sources */,
+				255BA9CA1F7F442900158856 /* Frameworks */,
+				255BA9CB1F7F442900158856 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "自定义AR实现";
+			productName = "自定义AR实现";
+			productReference = 255BA9CD1F7F442900158856 /* 自定义AR实现.app */;
+			productType = "com.apple.product-type.application";
+		};
+		255BA9E61F7F442900158856 /* 自定义AR实现Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 255BA9FE1F7F442900158856 /* Build configuration list for PBXNativeTarget "自定义AR实现Tests" */;
+			buildPhases = (
+				255BA9E31F7F442900158856 /* Sources */,
+				255BA9E41F7F442900158856 /* Frameworks */,
+				255BA9E51F7F442900158856 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				255BA9E91F7F442900158856 /* PBXTargetDependency */,
+			);
+			name = "自定义AR实现Tests";
+			productName = "自定义AR实现Tests";
+			productReference = 255BA9E71F7F442900158856 /* 自定义AR实现Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		255BA9F11F7F442900158856 /* 自定义AR实现UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 255BAA011F7F442900158856 /* Build configuration list for PBXNativeTarget "自定义AR实现UITests" */;
+			buildPhases = (
+				255BA9EE1F7F442900158856 /* Sources */,
+				255BA9EF1F7F442900158856 /* Frameworks */,
+				255BA9F01F7F442900158856 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				255BA9F41F7F442900158856 /* PBXTargetDependency */,
+			);
+			name = "自定义AR实现UITests";
+			productName = "自定义AR实现UITests";
+			productReference = 255BA9F21F7F442900158856 /* 自定义AR实现UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		255BA9C51F7F442900158856 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "黄红荫";
+				TargetAttributes = {
+					255BA9CC1F7F442900158856 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					255BA9E61F7F442900158856 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 255BA9CC1F7F442900158856;
+					};
+					255BA9F11F7F442900158856 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 255BA9CC1F7F442900158856;
+					};
+				};
+			};
+			buildConfigurationList = 255BA9C81F7F442900158856 /* Build configuration list for PBXProject "自定义AR实现" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 255BA9C41F7F442900158856;
+			productRefGroup = 255BA9CE1F7F442900158856 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				255BA9CC1F7F442900158856 /* 自定义AR实现 */,
+				255BA9E61F7F442900158856 /* 自定义AR实现Tests */,
+				255BA9F11F7F442900158856 /* 自定义AR实现UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		255BA9CB1F7F442900158856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255BA9D41F7F442900158856 /* art.scnassets in Resources */,
+				255BA9DF1F7F442900158856 /* LaunchScreen.storyboard in Resources */,
+				255BA9DC1F7F442900158856 /* Assets.xcassets in Resources */,
+				255BA9DA1F7F442900158856 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255BA9E51F7F442900158856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255BA9F01F7F442900158856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		255BA9C91F7F442900158856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255BA9D71F7F442900158856 /* ViewController.m in Sources */,
+				255BAA0C1F80BFE700158856 /* ARSCNViewMoveController.m in Sources */,
+				255BAA061F7F4C6500158856 /* ARSCNViewViewController.m in Sources */,
+				255BA9E21F7F442900158856 /* main.m in Sources */,
+				255BAA091F807B6700158856 /* ARSCNViewPlaneController.m in Sources */,
+				255BAA0F1F80C69600158856 /* ARSCNViewRotateController.m in Sources */,
+				255BA9D21F7F442900158856 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255BA9E31F7F442900158856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255BA9EC1F7F442900158856 /* ___AR__Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255BA9EE1F7F442900158856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255BA9F71F7F442900158856 /* ___AR__UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		255BA9E91F7F442900158856 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 255BA9CC1F7F442900158856 /* 自定义AR实现 */;
+			targetProxy = 255BA9E81F7F442900158856 /* PBXContainerItemProxy */;
+		};
+		255BA9F41F7F442900158856 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 255BA9CC1F7F442900158856 /* 自定义AR实现 */;
+			targetProxy = 255BA9F31F7F442900158856 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		255BA9D81F7F442900158856 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				255BA9D91F7F442900158856 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		255BA9DD1F7F442900158856 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				255BA9DE1F7F442900158856 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		255BA9F91F7F442900158856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		255BA9FA1F7F442900158856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		255BA9FC1F7F442900158856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 722DYSWU43;
+				INFOPLIST_FILE = "自定义AR实现/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hhy.---AR--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		255BA9FD1F7F442900158856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 722DYSWU43;
+				INFOPLIST_FILE = "自定义AR实现/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hhy.---AR--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		255BA9FF1F7F442900158856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 722DYSWU43;
+				INFOPLIST_FILE = "自定义AR实现Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hhy.---AR--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/自定义AR实现.app/自定义AR实现";
+			};
+			name = Debug;
+		};
+		255BAA001F7F442900158856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 722DYSWU43;
+				INFOPLIST_FILE = "自定义AR实现Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hhy.---AR--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/自定义AR实现.app/自定义AR实现";
+			};
+			name = Release;
+		};
+		255BAA021F7F442900158856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 722DYSWU43;
+				INFOPLIST_FILE = "自定义AR实现UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hhy.---AR--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "自定义AR实现";
+			};
+			name = Debug;
+		};
+		255BAA031F7F442900158856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 722DYSWU43;
+				INFOPLIST_FILE = "自定义AR实现UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hhy.---AR--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "自定义AR实现";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		255BA9C81F7F442900158856 /* Build configuration list for PBXProject "自定义AR实现" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255BA9F91F7F442900158856 /* Debug */,
+				255BA9FA1F7F442900158856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		255BA9FB1F7F442900158856 /* Build configuration list for PBXNativeTarget "自定义AR实现" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255BA9FC1F7F442900158856 /* Debug */,
+				255BA9FD1F7F442900158856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		255BA9FE1F7F442900158856 /* Build configuration list for PBXNativeTarget "自定义AR实现Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255BA9FF1F7F442900158856 /* Debug */,
+				255BAA001F7F442900158856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		255BAA011F7F442900158856 /* Build configuration list for PBXNativeTarget "自定义AR实现UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255BAA021F7F442900158856 /* Debug */,
+				255BAA031F7F442900158856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 255BA9C51F7F442900158856 /* Project object */;
+}
